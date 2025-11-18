@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Financeiro</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>
-                Financeiro💰
-            </h1>
-        </header>
-        
-        <main class="container">
-            <p>
-                <em class="mtitle">Digite o preço que deseja cobrar por hora: </em>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/financeiro.css">
+    <script src="js/codes.js"></script>
+</head>
+<body>
+
+<header class="head">
+    <img src="img/logo.png" alt="Logo da Empresa" class="logo-header">
+    <h1>Financeiro 💰</h1>
+    <button class="tema-toggle" onclick="alternarTema()">🌙</button>
+</header>
+
+<main class="financeiro-container">
+
+    <section class="financeiro-box">
+
+        <h2 class="sec-titulo">Digite o preço que deseja cobrar por hora:</h2>
+        <p>Para cada conjunto de hora digite o preço que deseja ganhar (deixe em branco se não desejar algum):</p>
+
+        <label class="label-preco">3 horas: R$
+            <input type="number" class="input-preco">
+        </label>
+
+        <label class="label-preco">6 horas: R$
+            <input type="number" class="input-preco">
+        </label>
+
+        <label class="label-preco">Diária: R$
+            <input type="number" class="input-preco">
+        </label>
+
+        <label class="label-preco">Outro (R$ + horas):
+            <input type="text" class="input-preco">
+        </label>
+
+        <h2 class="sec-titulo">Custos Extras (opcional):</h2>
+
+        <label class="checklinha">
+            Valor do transporte 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Valor de alimentação 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <h2 class="sec-titulo">Informe os meios pelos quais deseja receber seu pagamento:</h2>
+
+        <label class="checklinha">
+            PIX 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Transferência bancária 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Depósito em conta 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Dinheiro 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Boleto bancário 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">
+            Cartão de crédito (via máquina) 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+
+        <h2 class="sec-titulo">Mini Calculadora</h2>
+        <p>Calcule rapidamente quanto você receberia:</p>
+
+        <div class="calc-container">
+
+            <label class="label-preco">Valor por hora (R$):
+                <input type="number" id="calc-valor-hora" class="input-preco">
+            </label>
+
+            <label class="label-preco">Quantidade de horas trabalhadas:
+                <input type="number" id="calc-horas" class="input-preco">
+            </label>
+
+            <button class="calc-botao" onclick="calcularTotal()">Calcular</button>
+
+            <p class="calc-resultado">Total: R$
+                <span id="calc-total">0,00</span>
             </p>
-            <p>
-                <em class="mtitle">Para cada conjunto de hora digite o preço que deseja ganhar (deixe em branco se não desejar algum):</em>
-            </p>
-            <ul>
-                <li>
-                    3 horas: R$
-                </li>
-                <li>
-                    6 horas: R$
-                </li>
-                <li>
-                    Diária: R$
-                </li>
-                <li>
-                    Outro: R$ + horas
-                </li>
-            </ul>
 
-            <p>
-                <em class="mtitle">Custos Extras assinalar (opcional):</em>
-            </p>
-            <ul>
-                <li>
-                    Valor do transporte
-                    <img src="img/square.png" alt="check" width="15" class="but-img">
-                </li>
-                <li>
-                    Valor de alimentação
-                    <img src="img/square.png" alt="check" width="15" class="but-img">
-                </li>
-            </ul>
+        </div>
 
-            <p>
-                <em class="mtitle">Iforme os meios pelo qual deseja receber seu pagamento:</em><br>
-            </p>
+        <button class="voltar-botao" onclick="history.back()">Voltar</button>
 
+    </section>
 
-            <a href="criacao_perfil4.html" class="voltar">
-                Voltar
-            </a>
+</main>
 
-        </main>
-    </body>
+<script src="js/financeiro.js"></script>
+
+</body>
 </html>

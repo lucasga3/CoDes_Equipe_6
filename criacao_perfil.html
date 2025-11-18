@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Criação Perfil</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>
-                Criar Perfil
-            </h1>
-        </header>
-        <main class="container">
-            <ul>
-                <li>
-                    <em>Nome:</em><br>
-                </li>
-                <li>
-                    <em>Idade:</em><br>
-                </li>
-                <li>
-                    <em>Currículo:</em><br>
-                </li>
-            </ul>
-            <a href="criacao_perfil2.html" class="button">
-                Continuar
-            </a>                 
+<head>
+    <title>Criação Perfil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <script src="js/codes.js"></script>
+</head>
+<body>
 
-        </main>
-    </body>
+<header class="head">
+    <img src="img/logo.png" alt="Logo da Empresa" class="logo-header">
+    <h1>Criação do Perfil</h1>
+    <button class="tema-toggle" onclick="alternarTema()">🌙</button>
+</header>
+
+<main class="perfil-container">
+
+    <section class="perfil-box">
+
+        <h2 class="sec-titulo">Informações pessoais</h2>
+
+        <label class="perfil-pad">Nome:</label>
+        <input type="text" class="input" placeholder="Digite seu nome">
+
+        <label class="perfil-pad">Idade:</label>
+        <input type="number" class="input" placeholder="Digite sua idade">
+
+        <label class="perfil-pad">Currículo:</label>
+        <textarea class="input" rows="4" placeholder="Escreva seu currículo resumido"></textarea>
+
+        <label class="perfil-pad">Informações adicionais (opcional):</label>
+        <textarea class="input" rows="3" placeholder="Descreva outras informações importantes"></textarea>
+
+    </section>
+
+    <section class="perfil-box">
+
+        <h2 class="sec-titulo">Capacitações</h2>
+        <p class="sec-sec-titulo">Selecione as atividades que você consegue realizar:</p>
+
+        <div class="linha">
+            <span>Cozinhar</span>
+            <div class="check" onclick="alternar(this)"></div>
+        </div>
+
+        <div class="linha">
+            <span>Fazer faxina</span>
+            <div class="check" onclick="alternar(this)"></div>
+        </div>
+
+        <div class="linha">
+            <span>Dirigir</span>
+            <div class="check" onclick="alternar(this)"></div>
+        </div>
+
+        <div class="linha">
+            <span>Passar roupas</span>
+            <div class="check" onclick="alternar(this)"></div>
+        </div>
+
+    </section>
+
+    <a href="requisitos.html" class="botao-continuar">Continuar</a>
+
+</main>
+
+</body>
 </html>

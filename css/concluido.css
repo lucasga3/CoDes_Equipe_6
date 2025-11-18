@@ -1,0 +1,31 @@
+.concluido-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.mensagem{
+    font-size: 2rem;
+    max-width: 900px;
+    margin-bottom: 3rem;
+    line-height: 2.8rem;
+}
+
+.voltar-btn{
+    background-color: #abf463;
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: black;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.voltar-btn:hover{
+    background-color: #9fe358;
+    letter-spacing: 0.05rem;
+}

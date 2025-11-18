@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Agenda</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Agenda📅</h1>
-        </header>
-        
-        <main class="container">
-            <p><em class="mtitle">Dias de trabalho:</em></p>
-            <ul>
-                <li>
-                    Segunda-Feira
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-                <li>
-                    Terça-Feira
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-                <li>
-                    Quarta-Feira
-                    <img src="img/square.png" alt="check" width="15" class="but-img"> <br>
-                    ...                        
-                </li>
-            </ul>
-                
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
 
-            <p>
-                <em class="mtitle">Coloque no calendário a seguir as datas de feriado em que trabalha:</em><br>
-                <img src="img/calendario.jpg" alt="calendario" width="200">
-            </p>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <script src="js/codes.js"></script>
+</head>
+<body>
 
-            <p><em class="mtitle">Deseja férias em que período do ano:</em></p>
-            <ul>
-                <li>
-                    Verão
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-                <li>
-                    Inverno
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-                <li>
-                    Outono
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-                <li>
-                    Primavera
-                    <img src="img/square.png" alt="check" width="15" class="but-img">                        
-                </li>
-            </ul>
+<header class="head">
+    <img src="img/logo.png" alt="Logo da Empresa" class="logo-header">
+    <h1>Agenda 📅</h1>
+    <button class="tema-toggle" onclick="alternarTema()">🌙</button>
+</header>
 
-            <p>
-                <em class="mtitle">Digite quantos dias planeja ter de férias (opcional):</em>
-            </p>
+<main class="agenda-container">
 
+    <section class="agenda-box">
 
-            <a href="criacao_perfil4.html" class="voltar">
-                Voltar
-            </a>
-        </main>
-    </body>
+        <h2 class="sec-titulo">Dias de trabalho:</h2>
+
+        <div class="scroll-box">
+
+            <label class="checklinha">Segunda-feira 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Terça-feira 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Quarta-feira 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Quinta-feira 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Sexta-feira 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Sábado 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+            <label class="checklinha">Domingo 
+                <span class="check" onclick="toggleCheck(this)"></span>
+            </label>
+
+        </div>
+
+        <h2 class="sec-titulo">Coloque no calendário a seguir as datas de feriado em que trabalha:</h2>
+
+        <input type="date" id="feriado" class="input">
+
+        <h2 class="sec-titulo">Deseja férias em que período do ano:</h2>
+
+        <label class="checklinha">Verão 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">Inverno 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">Outono 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <label class="checklinha">Primavera 
+            <span class="check" onclick="toggleCheck(this)"></span>
+        </label>
+
+        <h2 class="sec-titulo">Digite quantos dias planeja ter de férias (opcional):</h2>
+        <input type="number" class="input" min="0" max="45" placeholder="Ex.: 15">
+
+        <button class="voltar-botao" onclick="history.back()">Voltar</button>
+
+    </section>
+
+</main>
+
+<script src="js/agenda.js"></script>
+
+</body>
 </html>

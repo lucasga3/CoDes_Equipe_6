@@ -1,0 +1,83 @@
+.local-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-local{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 900px;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+}
+
+.sec-titulo{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.bairros-scroll{
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 1rem 1.3rem;
+    max-height: 240px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.bairros-scroll::-webkit-scrollbar{
+    width: 10px;
+}
+
+.bairros-scroll::-webkit-scrollbar-thumb{
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+.bairros-scroll::-webkit-scrollbar-thumb:hover{
+    background: #bbbbbb;
+}
+
+.checklinha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .7rem 0;
+    font-size: 1.3rem;
+}
+
+.check{
+    width: 26px;
+    height: 26px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.check.marcado{
+    background-color: #7beb7b;
+}
+
+.check.marcado::after{
+    content: "✓";
+    position: absolute;
+    font-size: 20px;
+    left: 5px;
+    top: -2px;
+}
+
+.voltar-botao{
+    margin: 2rem auto 0 auto;
+    display: block;
+    background-color: #c8f476;
+    padding: .7rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1.3rem;
+}

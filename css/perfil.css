@@ -1,0 +1,65 @@
+.perfil-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1.5rem;
+}
+
+.perfil-box{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.perfil-pad{
+    margin-top: 1.5rem;
+    margin-bottom: .3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+textarea.input{
+    resize: none;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.botao-continuar{
+    background-color: var(--botao);
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    margin: 1rem auto 3rem auto;
+    display: block;
+}
+
+.botao-continuar:hover{
+    transform: scale(1.05);
+    letter-spacing: .05rem;
+}
+
+.sec-titulo{
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sec-sec-titulo{
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+}

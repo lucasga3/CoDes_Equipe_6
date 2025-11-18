@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/localizacao.css">
+    <script src="js/codes.js"></script>
+</head>
+<body>
+
+<header class="head">
+    <img src="img/logo.png" alt="Logo da Empresa" class="logo-header">
+    <h1>Localização 📍</h1>
+    <button class="tema-toggle" onclick="alternarTema()">🌙</button>
+</header>
+
+<main class="local-container">
+
+    <section class="caixa-local">
+
+        <h2 class="sec-titulo">Residência:</h2>
+        <input type="text" class="input" placeholder="Digite seu bairro">
+
+        <h2 class="sec-titulo">Regiões em que trabalha:</h2>
+
+        <div class="bairros-scroll">
+
+            <label class="checklinha">Água Branca <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Água Funda <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Alto da Boa Vista <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Anhanguera <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Bela Vista <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Bom Retiro <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Cambuci <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Campo Belo <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Capão Redondo <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Casa Verde <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Consolação <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Grajaú <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Interlagos <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Ipiranga <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Jabaquara <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Jardim Ângela <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Jardim São Luís <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Liberdade <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Lapa <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Moema <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Mooca <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Penha <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Pinheiros <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Santana <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Santo Amaro <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Saúde <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Tatuapé <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Tremembé <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Tucuruvi <span class="check" onclick="toggleCheck(this)"></span></label>
+            <label class="checklinha">Vila Mariana <span class="check" onclick="toggleCheck(this)"></span></label>
+
+        </div>
+
+        <h2 class="sec-titulo">Escolha o número máximo de conduções até o trabalho:</h2>
+        <input type="number" class="input" min="0" max="10" placeholder="Ex.: 2">
+
+        <h2 class="sec-titulo">Tipos de condução:</h2>
+
+        <label class="checklinha">Metrô <span class="check" onclick="toggleCheck(this)"></span></label>
+        <label class="checklinha">Ônibus <span class="check" onclick="toggleCheck(this)"></span></label>
+        <label class="checklinha">Trem <span class="check" onclick="toggleCheck(this)"></span></label>
+        <label class="checklinha">Carro <span class="check" onclick="toggleCheck(this)"></span></label>
+        <label class="checklinha">Moto <span class="check" onclick="toggleCheck(this)"></span></label>
+        <label class="checklinha">Bicicleta <span class="check" onclick="toggleCheck(this)"></span></label>
+
+        <button class="voltar-botao" onclick="history.back()">Voltar</button>
+
+    </section>
+
+</main>
+
+<script src="js/localizacao.js"></script>
+
+</body>
+</html>
