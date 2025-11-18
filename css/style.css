@@ -70,10 +70,10 @@ body {
 
 .logo-header {
     position: absolute;
-    left: 1rem;
+    left: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    height: 5rem;
+    height: 4rem;
     width: auto;
     cursor: pointer;
 }
